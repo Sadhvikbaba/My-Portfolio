@@ -65,7 +65,7 @@ const SkeletonFour = () => {
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        a certificate form Postman based on working on proxies and API's
+        a certificate form Postman based on working on proxies and API&apos;s
       </p>
     </div>
   );

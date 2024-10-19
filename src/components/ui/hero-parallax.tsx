@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { StaticImageData } from 'next/image';
 import {
   motion,
   useScroll,
@@ -16,7 +17,7 @@ export const HeroParallax = ({
   products: {
     title: string;
     link: string;
-    thumbnail: any;
+    thumbnail: StaticImageData;
   }[];
 }) => {
   const firstRow = products.slice(0, 5);
@@ -123,7 +124,7 @@ export const ProductCard = ({
   product: {
     title: string;
     link: string;
-    thumbnail: string;
+    thumbnail: StaticImageData;  // Change from string to StaticImageData
   };
   translate: MotionValue<number>;
 }) => {
@@ -144,7 +145,7 @@ export const ProductCard = ({
         className="block group-hover/product:shadow-2xl "
       >
         <Image
-          src={product.thumbnail}
+          src={product.thumbnail}  // This is expecting StaticImageData
           height="600"
           width="600"
           className="object-cover object-left-top absolute h-full w-full inset-0"
@@ -158,3 +159,4 @@ export const ProductCard = ({
     </motion.div>
   );
 };
+

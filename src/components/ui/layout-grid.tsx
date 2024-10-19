@@ -1,14 +1,14 @@
 "use client";
-import React, { useState} from "react";
-import {motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { cn } from "@/utils/lib";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 type Card = {
   id: number;
   content: JSX.Element | React.ReactNode | string;
   className: string;
-  thumbnail: any;
+  thumbnail: StaticImageData;  // Updated to StaticImageData
 };
 
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
@@ -63,13 +63,13 @@ const ImageComponent = ({ card }: { card: Card }) => {
   return (
     <motion.div layoutId={`image-${card.id}-image`} className="relative w-full h-full">
       <Image
-        src={card.thumbnail} // This will now work correctly
+        src={card.thumbnail}  // Using StaticImageData
         className={cn(
           "object-cover object-top absolute inset-0 transition duration-200"
         )}
         alt="thumbnail"
-        layout="fill" // This ensures the image fills its container
-        objectFit="cover" // Control the image fit to cover the container
+        layout="fill"
+        objectFit="cover"
       />
     </motion.div>
   );
