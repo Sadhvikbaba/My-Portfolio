@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import { LayoutGrid } from "./ui/layout-grid";
 import postman from "../../public/postman.png";
 import psBasic from "../../public/psBasic.png";

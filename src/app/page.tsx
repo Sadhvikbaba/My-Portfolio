@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {NavbarDemo} from "@/components/navbar"
 import { HeroParallaxDemo } from "@/components/hero";
 import { TimelineDemo } from "@/components/TimelineComp";
