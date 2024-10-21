@@ -24,10 +24,10 @@ function Navbar({ className }: NavbarProps) {
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Home">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">About Me</HoveredLink>
-            <HoveredLink href="/interface-design">Certifications</HoveredLink>
-            <HoveredLink href="/seo">Skills</HoveredLink>
-            <HoveredLink href="/branding">Contact Me</HoveredLink>
+            <HoveredLink href="">About Me</HoveredLink>
+            <HoveredLink href="">Certifications</HoveredLink>
+            <HoveredLink href="">Skills</HoveredLink>
+            <HoveredLink href="">Contact Me</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Experience">
