@@ -9,8 +9,8 @@ import pyBasic from "../../public/pyBasic.png";
 export function LayoutGridDemo() {
   return (
     <>
-      <h1 className=' text-5xl mb-4 text-white'>Skills</h1>
-      <div className="h-screen py-20 w-full  ">
+      <h1 className=' text-5xl sm:mb-4 text-white text-center mt-12'>Certifications</h1>
+      <div className="h-screen py-20 w-full min-w-full">
         <LayoutGrid cards={cards} />
       </div>
     </>

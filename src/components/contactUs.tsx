@@ -4,7 +4,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import emailjs from "emailjs-com";
 import { IoMail } from "react-icons/io5";
 
-// Define types for the form inputs
+
 interface IFormInput {
   name: string;
   email: string;
@@ -47,7 +47,7 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center w-full p-2 text-white">
+    <div className="min-h-screen flex items-center justify-center w-full p-2 text-white -mb-16">
       <div className="w-full sm:w-1/2 p-8 rounded-lg shadow-lg">
         <h1 className="text-neutral-400 text-4xl font-bold mb-6">CONTACT ME</h1>
         <form onSubmit={handleSubmit(onSubmit)}>

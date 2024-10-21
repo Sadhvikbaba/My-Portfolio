@@ -8,7 +8,7 @@ import { SiExpress , SiPostman } from "react-icons/si";
 const Skills = () => {
   return (
     <>
-    <h1 className=' text-5xl mb-4 text-white'>Skills</h1>
+    <h1 className=' text-5xl mb-4 text-white text-center mt-12'>Skills</h1>
     <div className='text-white'>
         <div className='grid grid-cols-2 md:grid-cols-6 gap-3'>
             <div className='flex flex-col p-4 justify-center items-center min-w-24 min-h-32 border-2 border-white rounded-lg text-7xl'>

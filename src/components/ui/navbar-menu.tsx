@@ -17,16 +17,15 @@ const transition = {
 type MenuItemProps = {
   setActive: (item: string) => void;
   active: string | null;
-  item: "Home" | "Experience" | "Deployments"; // Explicit type for the menu items
+  item: "Home" | "Experience" | "Deployments"; 
   children?: ReactNode;
 };
 
 export const MenuItem = ({ setActive, active, item, children }: MenuItemProps) => {
-  // Strict typing for the icons object
   const icons: Record<"Home" | "Experience" | "Deployments", ReactNode> = {
-    Home: <FaHome size={24} />,
-    Experience: <FaBriefcase size={24} />,
-    Deployments: <FaCloudUploadAlt size={24} />,
+    Home: <FaHome size={20} />,
+    Deployments: <FaCloudUploadAlt size={20} />,
+    Experience: <FaBriefcase size={20} />,
   };
 
   return (
@@ -38,7 +37,6 @@ export const MenuItem = ({ setActive, active, item, children }: MenuItemProps) =
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
       >
-        {/* Render the text on larger screens and the icon on small screens */}
         <span className="hidden md:block">{item}</span>
         <span className="md:hidden text-neutral-400">{icons[item]}</span>
       </motion.p>
@@ -49,7 +47,7 @@ export const MenuItem = ({ setActive, active, item, children }: MenuItemProps) =
           transition={transition}
         >
           {active === item && (
-            <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
+            <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4 -translate-y-3">
               <motion.div
                 transition={transition}
                 layoutId="active"

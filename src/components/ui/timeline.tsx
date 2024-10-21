@@ -24,8 +24,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       }
     };
 
-    handleResize(); // Set the height initially
-    window.addEventListener("resize", handleResize); // Update height on screen resize
+    handleResize(); 
+    window.addEventListener("resize", handleResize); 
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);

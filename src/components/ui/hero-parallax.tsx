@@ -124,7 +124,7 @@ export const ProductCard = ({
   product: {
     title: string;
     link: string;
-    thumbnail: StaticImageData;  // Change from string to StaticImageData
+    thumbnail: StaticImageData;  
   };
   translate: MotionValue<number>;
 }) => {
