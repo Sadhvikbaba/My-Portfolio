@@ -19,9 +19,11 @@ type NavbarProps = {
 
 function Navbar({ className }: NavbarProps) {
   const [active, setActive] = useState<string | null>(null);
+
   return (
-    <div className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
+    <div className={cn("fixed top-10 inset-x-0 sm:w-80 mx-auto z-50 w-36 ", className)}>
       <Menu setActive={setActive}>
+        {/* Home */}
         <MenuItem setActive={setActive} active={active} item="Home">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="">About Me</HoveredLink>
@@ -30,11 +32,15 @@ function Navbar({ className }: NavbarProps) {
             <HoveredLink href="">Contact Me</HoveredLink>
           </div>
         </MenuItem>
+
+        {/* Experience */}
         <MenuItem setActive={setActive} active={active} item="Experience">
           <div className="flex flex-col space-y-4 text-sm text-white">
             Associate Next Tech Lab
           </div>
         </MenuItem>
+
+        {/* Deployments */}
         <MenuItem setActive={setActive} active={active} item="Deployments">
           <div className="text-sm grid gap-10 p-4">
             <ProductItem

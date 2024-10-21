@@ -3,6 +3,7 @@ import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { FaHome, FaBriefcase, FaCloudUploadAlt } from "react-icons/fa"; 
 
 const transition = {
   type: "spring",
@@ -16,18 +17,30 @@ const transition = {
 type MenuItemProps = {
   setActive: (item: string) => void;
   active: string | null;
-  item: string;
+  item: "Home" | "Experience" | "Deployments"; // Explicit type for the menu items
   children?: ReactNode;
 };
 
 export const MenuItem = ({ setActive, active, item, children }: MenuItemProps) => {
+  // Strict typing for the icons object
+  const icons: Record<"Home" | "Experience" | "Deployments", ReactNode> = {
+    Home: <FaHome size={24} />,
+    Experience: <FaBriefcase size={24} />,
+    Deployments: <FaCloudUploadAlt size={24} />,
+  };
+
   return (
-    <div onMouseEnter={() => setActive(item)} className="relative ">
+    <div
+      onMouseEnter={() => setActive(item)}
+      className="relative"
+    >
       <motion.p
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
       >
-        {item}
+        {/* Render the text on larger screens and the icon on small screens */}
+        <span className="hidden md:block">{item}</span>
+        <span className="md:hidden text-neutral-400">{icons[item]}</span>
       </motion.p>
       {active !== null && (
         <motion.div
@@ -63,7 +76,7 @@ export const Menu = ({ setActive, children }: MenuProps) => {
   return (
     <nav
       onMouseLeave={() => setActive(null)}
-      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 "
+      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-3"
     >
       {children}
     </nav>
