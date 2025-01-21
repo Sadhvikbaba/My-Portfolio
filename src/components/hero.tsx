@@ -8,6 +8,7 @@ import scroll from "../../public/scroll.png";
 import parllax from "../../public/parllax.png";
 import chat from "../../public/chat.png";
 import ecoCoin from "../../public/ecoCoin.png";
+import codeGuru from "../../public/codeGuru.png"
 
 
 export function HeroParallaxDemo() {
@@ -55,19 +56,19 @@ export const products = [
     thumbnail:ecoCoin,
   },
   {
-    title: "chat app Frontend",
-    link: "https://github.com/Sadhvikbaba/ChatApp-Frontend",
-    thumbnail:chatPro,
-  },
-  {
-    title: "Connect ",
-    link: "https://github.com/Sadhvikbaba/first-fullstack",
-    thumbnail:connectPro,
+    title: "Code Guru Frontend",
+    link: "https://github.com/Sadhvikbaba/codeGuru-Frontend",
+    thumbnail:codeGuru,
   },
   {
     title: "scroll design",
     link: "https://github.com/Sadhvikbaba/scroll-animation",
     thumbnail:scroll,
+  },
+  {
+    title: "Code Guru Backend ",
+    link: "https://github.com/Sadhvikbaba/codeGuru-Backend",
+    thumbnail:codeGuru,
   },
   {
     title: "parllax design",

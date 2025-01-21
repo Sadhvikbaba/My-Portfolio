@@ -4,6 +4,7 @@ import { Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import { cn } from "@/utils/lib";
 import Connect from "../../public/connectPro.png";
 import Twit from "../../public/twitPro.png";
+import CodeGuru from "../../public/codeGuru.png";
 
 export function NavbarDemo({
   moveSkills,
@@ -63,6 +64,12 @@ function Navbar({ className, moveSkills, moveCertifications, moveContactus , mov
               href="https://twit-frontend.vercel.app"
               src={Twit.src}
               description="YouTube Twitter hybrid application"
+            />
+            <ProductItem
+              title="Code Guru"
+              href="https://code-guru-frontend.vercel.app/"
+              src={CodeGuru.src}
+              description="A Coding Platform"
             />
           </div>
         </MenuItem>
