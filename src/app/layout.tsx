@@ -16,7 +16,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "sadhvik baba",
   description: "Portfolio of Sadhvik Baba Patibandla Full Stack Developer, Open Source Contributor, and AI Enthusiast.",
-  keywords: "Sadhvik Baba, MERN, Full Stack, AI, Next.js, Portfolio, Developer, React, MongoDB, Express, Node.js",
+  keywords: "sadhvik, sadhvik baba, patibandla, sadhvik baba patibandla, Sadhvik Baba, MERN, Full Stack, AI, Next.js, Portfolio, Developer, React, MongoDB, Express, Node.js",
   authors: [{ name: "Sadhvik Baba Patibandla" }],
   viewport: {
     width: "device-width",
