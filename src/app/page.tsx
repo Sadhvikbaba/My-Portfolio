@@ -47,6 +47,7 @@ export default function Home() {
     <div className="flex items-center justify-center h-full w-full flex-col bg-black max-w-full overflow-x-hidden">
       <Head>
         <title>Sadhvik Baba </title>
+        <meta name="google-site-verification" content="Po7Ls--6WZuhoIZwS7aHdl15TnB1ERDowY-tBVNlbCg" />
         <meta name="description" content="Portfolio of Sadhvik Baba Patibandla Full Stack Developer, Open Source Contributor, and AI Enthusiast." />
         <meta name="keywords" content="Sadhvik Baba, MERN, Full Stack, AI, Next.js, Portfolio, Developer, React, MongoDB, Express, Node.js" />
         <meta name="author" content="Sadhvik Baba Patibandla" />
