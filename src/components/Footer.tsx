@@ -34,7 +34,7 @@ export function FloatingDockDemo() {
       icon: (
         <LiaHackerrank className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://www.hackerrank.com/profile/psadhvik2006",
+      href: "https://www.hackerrank.com/profile/AP23110010128",
     },
     {
       title: "Instagram",

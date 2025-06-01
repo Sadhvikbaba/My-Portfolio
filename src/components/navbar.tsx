@@ -75,7 +75,7 @@ function Navbar({ className, moveSkills, moveCertifications, moveContactus , mov
         </MenuItem>
 
         <MenuItem setActive={setActive} active={active} item="Experience">
-          <div className="flex flex-col space-y-4 text-sm text-white">Associate Next Tech Lab</div>
+          <div className="flex flex-col space-y-4 text-sm text-white">Member Next Tech Lab</div>
         </MenuItem>
       </Menu>
     </div>

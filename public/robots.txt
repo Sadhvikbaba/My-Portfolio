@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://my-portfolio-khaki-two-52.vercel.app
+
+# Sitemaps
+Sitemap: https://my-portfolio-khaki-two-52.vercel.app/sitemap.xml

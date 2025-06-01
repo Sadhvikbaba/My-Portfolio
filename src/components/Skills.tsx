@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaReact , FaNodeJs , FaJsSquare , FaPython} from "react-icons/fa";
+import { FaReact , FaNodeJs , FaJsSquare , FaPython, FaDocker} from "react-icons/fa";
 import { BiLogoTypescript , BiLogoMongodb , BiLogoPostgresql} from "react-icons/bi";
 import { RiNextjsFill , RiTailwindCssFill} from "react-icons/ri";
 import { TbBrandCpp } from "react-icons/tb";
@@ -11,10 +11,6 @@ const Skills = () => {
     <h1 className=' text-5xl mb-4 text-white text-center mt-12'>Skills</h1>
     <div className='text-white'>
         <div className='grid grid-cols-2 md:grid-cols-7 gap-3'>
-            <div className='flex flex-col p-4 justify-center items-center min-w-24 min-h-32 border-2 border-white rounded-lg text-7xl'>
-                C
-                <div className='text-2xl text-center font-semibold'>c</div>
-            </div>
             <div className='flex flex-col p-4 justify-center items-center min-w-24 min-h-32 border-2 border-white rounded-lg text-7xl'>
                 <TbBrandCpp/>
                 <div className='text-2xl text-center font-semibold'>c++</div>
@@ -66,6 +62,10 @@ const Skills = () => {
             <div className='flex flex-col p-4 justify-center items-center min-w-24 min-h-32 border-2 border-white rounded-lg text-7xl'>
                 <SiPrisma/>
                 <div className='text-2xl text-center font-semibold'>Prisma</div>
+            </div>
+            <div className='flex flex-col p-4 justify-center items-center min-w-24 min-h-32 border-2 border-white rounded-lg text-7xl'>
+                <FaDocker/>
+                <div className='text-2xl text-center font-semibold'>Docker</div>
             </div>
         </div>
     </div>

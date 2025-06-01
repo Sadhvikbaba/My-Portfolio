@@ -54,7 +54,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            explored MERN stack and NEXT-JS and more web dev. created Connect(social media) , Twit(youtube-twitter) , chatting applications , Coding Platform
+            explored MERN stack and NEXT-JS and more web dev. created Connect(social media) , Twit(youtube-twitter) , chatting applications , Coding Platform and won 2 hackathons promoted to member in Next Tech Lab
           </p>
           
           <div className="grid grid-cols-2 gap-4">
