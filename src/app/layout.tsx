@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     google: "Po7Ls--6WZuhoIZwS7aHdl15TnB1ERDowY-tBVNlbCg",
   },
   openGraph: {
-    title: "Sadhvik Baba | MERN Developer",
+    title: "Sadhvik baba",
     description: "Explore the projects and skills of Sadhvik Baba a passionate full stack web developer with AI/ML interest.",
     url: "https://my-portfolio-khaki-two-52.vercel.app",
     type: "website",
