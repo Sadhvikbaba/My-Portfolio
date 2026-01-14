@@ -14,9 +14,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Sadhvik Baba",
+  title: "sadhvik baba",
   description: "Portfolio of Sadhvik Baba Patibandla Full Stack Developer, Open Source Contributor, and AI Enthusiast.",
-  keywords: "Sadhvik Baba, MERN, Full Stack, AI, Next.js, Portfolio, Developer, React, MongoDB, Express, Node.js",
+  keywords: "sadhvik, sadhvik baba, patibandla, sadhvik baba patibandla, Sadhvik Baba, MERN, Full Stack, AI, Next.js, Portfolio, Developer, React, MongoDB, Express, Node.js",
   authors: [{ name: "Sadhvik Baba Patibandla" }],
   viewport: {
     width: "device-width",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     google: "Po7Ls--6WZuhoIZwS7aHdl15TnB1ERDowY-tBVNlbCg",
   },
   openGraph: {
-    title: "Sadhvik Baba | MERN Developer",
+    title: "Sadhvik baba",
     description: "Explore the projects and skills of Sadhvik Baba a passionate full stack web developer with AI/ML interest.",
     url: "https://my-portfolio-khaki-two-52.vercel.app",
     type: "website",
