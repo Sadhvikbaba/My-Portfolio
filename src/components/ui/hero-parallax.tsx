@@ -105,7 +105,7 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
+      <h1 className="text-2xl md:text-7xl font-bold text-white">
         <div className="text-3xl sm:text-5xl p-1">Patibandla</div>
         <div className="text-5xl sm:text-7xl">Sadhvik baba</div>
       </h1>
@@ -148,7 +148,7 @@ export const ProductCard = ({
           src={product.thumbnail}  // This is expecting StaticImageData
           height="600"
           width="600"
-          className="object-cover object-left-top absolute h-full w-full inset-0"
+          className="absolute h-full w-full inset-0"
           alt={product.title}
         />
       </Link>

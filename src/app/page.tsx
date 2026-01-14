@@ -44,7 +44,6 @@ export default function Home() {
 
   return (
     <div className="flex items-center justify-center h-full w-full flex-col bg-black max-w-full overflow-x-hidden">
-      
       <div >
         <NavbarDemo moveSkills={moveSkills} moveCertifications={moveCertifications} moveContactus={moveContactus} moveAboutMe={moveAboutMe}/>
       </div>

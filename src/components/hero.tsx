@@ -9,6 +9,7 @@ import parllax from "../../public/parllax.png";
 import chat from "../../public/chat.png";
 import ecoCoin from "../../public/ecoCoin.png";
 import codeGuru from "../../public/codeGuru.png"
+import CodeFudji from "../../public/code-fudji.png"
 
 
 export function HeroParallaxDemo() {
@@ -31,9 +32,9 @@ export const products = [
     thumbnail:connectPro,
   },
   {
-    title: "scroll design",
-    link: "https://github.com/Sadhvikbaba/scroll-animation",
-    thumbnail:scroll,
+    title: "Code Fudji",
+    link: "https://github.com/Sadhvikbaba/code-fudji",
+    thumbnail:CodeFudji,
   },
   {
     title: "parllax design",

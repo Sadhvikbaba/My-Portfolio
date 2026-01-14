@@ -5,6 +5,7 @@ import { cn } from "@/utils/lib";
 import Connect from "../../public/connectPro.png";
 import Twit from "../../public/twitPro.png";
 import CodeGuru from "../../public/codeGuru.png";
+import CodeFudji from "../../public/code-fudji.png";
 
 export function NavbarDemo({
   moveSkills,
@@ -69,6 +70,12 @@ function Navbar({ className, moveSkills, moveCertifications, moveContactus , mov
               title="Code Guru"
               href="https://code-guru-frontend.vercel.app/"
               src={CodeGuru.src}
+              description="A Coding Platform"
+            />
+            <ProductItem
+              title="Code Fudji"
+              href="https://code-fudji.vercel.app/"
+              src={CodeFudji.src}
               description="A Coding Platform"
             />
           </div>
